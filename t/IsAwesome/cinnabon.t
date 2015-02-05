@@ -9,14 +9,11 @@ zci answer_type => "is_awesome_cinnabon";
 zci is_cached   => 1;
 
 ddg_goodie_test(
-    [qw( DDG::Goodie::IsAwesome::cinnabon )],
-    # At a minimum, be sure to include tests for all:
-    # - primary_example_queries
-    # - secondary_example_queries
-    'example query' => test_zci('query'),
-    # Try to include some examples of queries on which it might
-    # appear that your answer will trigger, but does not.
-    'bad example query' => undef,
+    [qw(
+        DDG::Goodie::IsAwesome::cinnabon
+    )],
+    'duckduckhack cinnabon' => test_zci('cinnabon is awesome and has successfully completed the DuckDuckHack Goodie tutorial!'),
+    'duckduckhack cinnabon is awesome' => undef,
 );
 
 done_testing;
